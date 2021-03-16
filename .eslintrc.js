@@ -4,6 +4,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     project: ['./tsconfig.json']
   },
+  exclude: ['.eslintrc.js, apollo.config.js'],
   extends: [
     '@tribecamp/base',
     '@tribecamp/typescript',
@@ -12,6 +13,6 @@ module.exports = {
     'prettier/unicorn'
   ],
   rules: {
-    "no-console": "off"
+    'no-console': 'off'
   }
 };
